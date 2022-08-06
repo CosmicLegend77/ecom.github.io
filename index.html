@@ -16,6 +16,8 @@
 
 <body>
 
+    <div class="overlay" id="overlay"></div>
+
     <!-- header -->
     <div class="header">
         <div class="container">
@@ -23,7 +25,7 @@
                 <a href=""><img src="assets/images/logo/logo.svg" alt=""></a>
             </div>
             <form action="#">
-                <input type="text" placeholder="Search for kurties, t-shirt and many more...">
+                <input type="text" placeholder="Search for products...">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <div class="user-action">
@@ -137,15 +139,75 @@
         </div>
     </nav>
 
+    <!-- mobile-menu -->
     <div class="mobile-menu-pane">
         <ul class="menu-container">
-            <li class="menu_lists_item"><a href="#"><i class="fas fa-bars"></i></a></li>
+            <li class="menu_lists_item"><a id="sidebar_btn"><i class="fas fa-bars"></i></a></li>
             <li class="menu_lists_item"><a href="#"><i class="fas fa-bag-shopping"></i><span>0</span></a></li>
             <li class="menu_lists_item"><a href="#"><i class="fas fa-truck-fast"></i></a></li>
             <li class="menu_lists_item"><a href="#"><i class="fas fa-user"></i></a></li>
             <li class="menu_lists_item"><a href="#"><i class="fas fa-list"></i></a></li>
         </ul>
     </div>
+
+    <div class="mobile-sidebar-pane">
+        <div class="container" id="sidebar">
+            <div class="heading">
+                <h3>Menu</h3>
+                <div id="sidebar_close">
+                    <i class="fa fa-xmark"></i>
+                </div>
+            </div>
+            <ul class="mobile_main_menu">
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Home</a>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Men's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Formal</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Innerwear</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Women's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Kid's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Blog</a>
+                </li>
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Hot Offers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 
     <!-- banner -->
     <div class="banner">
@@ -542,21 +604,23 @@
                             </div>
                             <div class="time">
                                 <div class="end_text">Hurry Up! Offer ends in : </div>
-                                <div class="main_time">
-                                    <span class="indicator">Days</span>
-                                    <span class="value">01</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Hrs</span>
-                                    <span class="value">15</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Mins</span>
-                                    <span class="value">28</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Secs</span>
-                                    <span class="value">50</span>
+                                <div class="hurry">
+                                    <div class="main_time">
+                                        <span class="indicator">Days</span>
+                                        <span class="value">01</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Hrs</span>
+                                        <span class="value">15</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Mins</span>
+                                        <span class="value">28</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Secs</span>
+                                        <span class="value">50</span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -597,21 +661,23 @@
                             </div>
                             <div class="time">
                                 <div class="end_text">Hurry Up! Offer ends in : </div>
-                                <div class="main_time">
-                                    <span class="indicator">Days</span>
-                                    <span class="value">01</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Hrs</span>
-                                    <span class="value">15</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Mins</span>
-                                    <span class="value">28</span>
-                                </div>
-                                <div class="main_time">
-                                    <span class="indicator">Secs</span>
-                                    <span class="value">50</span>
+                                <div class="hurry">
+                                    <div class="main_time">
+                                        <span class="indicator">Days</span>
+                                        <span class="value">01</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Hrs</span>
+                                        <span class="value">15</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Mins</span>
+                                        <span class="value">28</span>
+                                    </div>
+                                    <div class="main_time">
+                                        <span class="indicator">Secs</span>
+                                        <span class="value">50</span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -945,7 +1011,7 @@
                     </div>
                 </div>
                 <div class="our_services">
-                    <div class="heading">Our Services</div>
+                    <h3 class="heading">Our Services</h3>
                     <div class="all_service">
                         <div class="services_section">
                             <div class="service_info">
@@ -985,6 +1051,109 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer_section">
+                <div class="brand_directory">
+                    <h3 class="heading">Brand Directory</h3>
+                    <div class="directory_items">
+                        <div class="footer_category_box">
+                            <h4 class="category_name">Fashion :</h4>
+                            <a href="#">T-shirt</a>
+                            <a href="#">Shirt</a>
+                            <a href="#">Shorts & Jeans</a>
+                            <a href="#">Jacket</a>
+                            <a href="#">Innerwear</a>
+                            <a href="#">Hosiary</a>
+                            <a href="#">Dress & Frock</a>
+                        </div>
+                        <div class="footer_category_box">
+                            <h4 class="category_name">Footwear :</h4>
+                            <a href="#">Sports</a>
+                            <a href="#">Formal</a>
+                            <a href="#">Boots</a>
+                            <a href="#">Casual</a>
+                            <a href="#">Party Wear</a>
+                            <a href="#">Branded</a>
+                            <a href="#">Long Shoes</a>
+                        </div>
+                        <div class="footer_category_box">
+                            <h4 class="category_name">Accessories :</h4>
+                            <a href="#">Bags</a>
+                            <a href="#">Purse</a>
+                            <a href="#">Neckless</a>
+                            <a href="#">Earings</a>
+                            <a href="#">Lipstick</a>
+                            <a href="#">MackupKit</a>
+                            <a href="#">Watch</a>
+                            <a href="#">Perfume</a>
+                            <a href="#">Hats</a>
+                        </div>
+                        <div class="footer_category_box">
+                            <h4 class="category_name">Cosmetics :</h4>
+                            <a href="#">Shampoo</a>
+                            <a href="#">Bodywash</a>
+                            <a href="#">Facewash</a>
+                            <a href="#">Makeup Kit</a>
+                            <a href="#">Scrub</a>
+                            <a href="#">Soap</a>
+                            <a href="#">Hair Gel</a>
+                            <a href="#">Hair Color</a>
+                            <a href="#">Hair Dye</a>
+                            <a href="#">Conditionar</a>
+                            <a href="#">Sun Screen</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_nav">
+                    <ul class="footer_menu">
+                        <li class="footer_menu_heading">Popular Categories</li>
+                        <li class="footer_menu_list"><a href="#">Fashion</a></li>
+                        <li class="footer_menu_list"><a href="#">Electronic</a></li>
+                        <li class="footer_menu_list"><a href="#">Cosmetic</a></li>
+                        <li class="footer_menu_list"><a href="#">Health</a></li>
+                        <li class="footer_menu_list"><a href="#">Watches</a></li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li class="footer_menu_heading">Products</li>
+                        <li class="footer_menu_list"><a href="#">Trendings</a></li>
+                        <li class="footer_menu_list"><a href="#">Formal</a></li>
+                        <li class="footer_menu_list"><a href="#">Casual</a></li>
+                        <li class="footer_menu_list"><a href="#">New Arrivals</a></li>
+                        <li class="footer_menu_list"><a href="#">Discount</a></li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li class="footer_menu_heading">Our Company</li>
+                        <li class="footer_menu_list"><a href="#">Delivery</a></li>
+                        <li class="footer_menu_list"><a href="#">Legal Notice</a></li>
+                        <li class="footer_menu_list"><a href="#">Terms & Conditions</a></li>
+                        <li class="footer_menu_list"><a href="#">About Us</a></li>
+                        <li class="footer_menu_list"><a href="#">Secure Payment</a></li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li class="footer_menu_heading">Services</li>
+                        <li class="footer_menu_list"><a href="#">New Products</a></li>
+                        <li class="footer_menu_list"><a href="#">Price Drop</a></li>
+                        <li class="footer_menu_list"><a href="#">Best Sales</a></li>
+                        <li class="footer_menu_list"><a href="#">Sitemap</a></li>
+                        <li class="footer_menu_list"><a href="#">Customer Support</a></li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li class="footer_menu_heading">Contact</li>
+                        <li class="footer_menu_list"><i class="fa fa-location-dot"></i><a>123,Motilal Gupta Road<br>Kolkata,West Bengal<br>Kolkata - 700008</a></li>
+                        <li class="footer_menu_list"><i class="fa fa-phone"></i><a href="tel:+9112345-67890">+91-12345-67890</a></li>
+                        <li class="footer_menu_list"><i class="fa fa-envelope"></i><a href="mailto:example@gmail.com">Example@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <img src="assets/images/payment.png" alt="">
+                    <footer>Copywrite &copy; 2022 by Anon. All rights reserved.</footer>
                 </div>
             </div>
         </div>
