@@ -510,7 +510,11 @@ i{
     min-width: 25%;
 }
 
-.new_arrivals .container .arrival_section .left h3,.new_arrivals .container .arrival_section .cards_container h3,.latest .container .latest_section h3{
+.new_arrivals .container .arrival_section .left .heading,
+.new_arrivals .container .arrival_section .cards_container .heading,
+.latest .container .latest_section .heading,
+.special_offer .container .special_offer_section .our_services .heading
+{
    font-size: 0.985rem;
    margin: 10px 0;
    font-weight: 600;
@@ -949,7 +953,133 @@ i{
     font-size: 0.945rem;
     color: var(--light-grey);
     text-decoration: line-through;
- }
+}
+
+.special_offer{
+    padding: 15px 20px;
+}
+
+.special_offer .container .special_offer_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.special_offer .container .special_offer_section .special_discount{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.special_offer .container .special_offer_section .special_discount img{
+    width: 100%;
+    height: auto;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount{
+    position: absolute;
+    background: var(--shadow);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount .tag{
+    background: var(--black);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount .heading{
+    color: var(--asbestos-black);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount .info{
+    color: var(--light-grey);
+    font-weight: 600;
+    font-size: 0.975rem;
+    margin-bottom: 15px;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount a{
+    padding: 10px;
+    background: var(--orangish-yellow);
+    color: var(--white);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.925rem;
+    transition: 0.4s ease;
+}
+
+.special_offer .container .special_offer_section .special_discount .discount a:hover{
+    background-color: var(--deep-orange);
+}
+
+.special_offer .container .special_offer_section .our_services{
+    width: 25%;
+}
+
+.special_offer .container .special_offer_section .our_services .all_service{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 15px;
+   border: 1px solid var(--border);
+   padding: 20px;
+   border-radius: 5px;
+}
+
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info i{
+    font-size: 32px;
+    color: var(--orangish-yellow);
+    transition: 0.4s ease;
+}
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info:hover i{
+    color: var(--asbestos-black);
+}
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info .details{
+    margin-left: 20px;
+}
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info .details h4{
+    font-size: 0.975rem;
+    font-weight: 600;
+    color: var(--light-grey);
+    text-transform: capitalize;
+}
+
+.special_offer .container .special_offer_section .our_services .all_service .services_section .service_info .details p{
+    margin-top: 5px;
+    font-size: 0.825rem;
+    color: var(--light-grey);
+    text-transform: capitalize;
+}
 
 /* mobile */
 .mobile-menu-pane{
@@ -1127,7 +1257,6 @@ i{
     }
 
     .mobile-menu-pane .menu-container{
-       
         width: 50%;
         border: 1px solid var(--border);
         display: flex;
