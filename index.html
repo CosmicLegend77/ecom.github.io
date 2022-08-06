@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ecommerce</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="assets/images/logo/logo.svg" alt=""></a>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Search for kurties, t-shirt and many more...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="user-action">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <span>0</span>
+                </div>
+                <div class="order">
+                    <a href="#"><i class="fa-solid fa-truck-fast"></i></a>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu's -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="menubar">
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Categories</a>
+                    <div class="dropdown-container">
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Men's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Casual</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Formal</a></li>
+                                <li><a href="#" class="dropdown-menu-title">T-shirt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shorts</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Jeans</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img
+                                            src="assets/images/electronics-banner-1.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Women's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Casual</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Formal</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Kurties</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Sarees</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Lehanga</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img src="assets/images/mens-banner.jpg"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Kid's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Jeans</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shorts</a></li>
+                                <li><a href="#" class="dropdown-menu-title">T-shirt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Hats</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shoes</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img src="assets/images/womens-banner.jpg"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Accessories</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Earings</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Mackup-kit</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Lipstick</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Belt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Watches</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img
+                                            src="assets/images/electronics-banner-2.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Men's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">T-shirts</a></li>
+                        <li class="dropdown-item"><a href="#">Shorts</a></li>
+                        <li class="dropdown-item"><a href="#">Shoes</a></li>
+                        <li class="dropdown-item"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Woman's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">Kurties</a></li>
+                        <li class="dropdown-item"><a href="#">Sarees</a></li>
+                        <li class="dropdown-item"><a href="#">Lehanga</a></li>
+                        <li class="dropdown-item"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Kid's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">T-shirts</a></li>
+                        <li class="dropdown-item"><a href="#">Shorts</a></li>
+                        <li class="dropdown-item"><a href="#">Shoes</a></li>
+                        <li class="dropdown-item"><a href="#">Hats</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Blog</a>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-pane">
+        <ul class="menu-container">
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-bars"></i></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-bag-shopping"></i><span>0</span></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-truck-fast"></i></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-list"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/images/banner-1.jpg" alt="">
+                    <div class="banner-container">
+                        <p class="heading">Trending Item</p>
+                        <h3 class="heading-2">Women's Latest Fashion Sale</h3>
+                        <p class="sale">starting at &#8377;350.</p>
+                        <button class="button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banner-2.jpg" alt="">
+                    <div class="banner-container">
+                        <p class="heading">Trending Accessories</p>
+                        <h3 class="heading-2">Mordern Sunglasses</h3>
+                        <p class="sale">starting at &#8377;100.</p>
+                        <button class="button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/banner-3.jpg" alt="">
+                    <div class="banner-container">
+                        <p class="heading">Sale Offer</p>
+                        <h3 class="heading-2">New Fashion Summer Sale</h3>
+                        <p class="sale">starting at &#8377;250.</p>
+                        <button class="button">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+
+    <!-- category -->
+    <div class="category">
+        <div class="container">
+            <div class="items has-scrollbar">
+                <div class="item">
+                    <div class="image">
+                        <img src="https://banner2.cleanpng.com/20171201/cf1/running-shoes-png-image-5a214047bbdec2.2650267415121285837695.jpg"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Shoe <span>(53)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://www.pngitem.com/pimgs/m/102-1023440_clock-png-image-wrist-watch-transparent-background-png.png"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Watch <span>(48)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://www.freepnglogos.com/uploads/t-shirt-png/t-shirt-png-black-shirt-png-transparent-image-pngpix-2.png"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">T-shirt <span>(18)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://toppng.com/uploads/preview/ladies-purse-ladies-hand-bag-11563062357cusqfhwkov.png"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Bags <span>(12)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://banner2.cleanpng.com/20171201/cf1/running-shoes-png-image-5a214047bbdec2.2650267415121285837695.jpg"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Shoes <span>(53)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://banner2.cleanpng.com/20171201/cf1/running-shoes-png-image-5a214047bbdec2.2650267415121285837695.jpg"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Shoes <span>(53)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://banner2.cleanpng.com/20171201/cf1/running-shoes-png-image-5a214047bbdec2.2650267415121285837695.jpg"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Shoes <span>(53)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <img src="https://banner2.cleanpng.com/20171201/cf1/running-shoes-png-image-5a214047bbdec2.2650267415121285837695.jpg"
+                            alt="">
+                    </div>
+                    <div class="utils">
+                        <div class="heading">Shoes <span>(53)</span></div>
+                        <a href="#" class="info">Show All</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- new arrivals -->
+    <div class="new_arrivals">
+        <div class="container">
+            <div class="arrival_section">
+                <div class="left">
+                    <h3 class="heading">Top Picks</h3>
+                    <div class="range">
+                        <ul class="range_menu">
+                            <li class="range_list"><a href="#">Under &#8377;100</a><span>(23)</span></li>
+                            <li class="range_list"><a href="#">&#8377;100 - &#8377;500</a><span>(23)</span></li>
+                            <li class="range_list"><a href="#">&#8377;500 - &#8377;1000</a><span>(23)</span></li>
+                            <li class="range_list"><a href="#">&#8377;1000 - &#8377;5000</a><span>(23)</span></li>
+                            <li class="range_list"><a href="#">&#8377;5000 - &#8377;10000</a><span>(23)</span></li>
+                            <li class="range_list"><a href="#">Above &#8377;10000</a><span>(23)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cards_container">
+                    <h3 class="heading">Latest Products</h3>
+                    <ul class="card">
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/1.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/2.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/3.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/4.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cards_container">
+                    <h3 class="heading">New Arrivals</h3>
+                    <ul class="card">
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/1.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/2.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/3.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/4.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cards_container">
+                    <h3 class="heading">Trendings</h3>
+                    <ul class="card">
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/1.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/2.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/3.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="card_item_list">
+                            <a href="#" class="card">
+                                <img src="assets/images/products/4.jpg" alt="" class="image" width="80">
+                                <div class="details">
+                                    <h4 class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                                        aut, obcaecati sed optio dolorum ratione corrupti nostrum officiis mollitia
+                                        possimus quaerat quidem quas.</h4>
+                                    <div class="pricing">
+                                        <p class="act_price">&#8377;250</p>
+                                        <p class="sell_price">&#8377;150</p>
+                                        <p class="off">75% off</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- deal-of-the-day -->
+    <div class="deal">
+        <div class="container">
+            <div class="deal_section">
+                <h3 class="heading">Deal Of The Day</h3>
+                <div class="cards has-scrollbar">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/shampoo.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt doloribus ullam, debitis tenetur reiciendis in, alias numquam, sed unde corporis quaerat inventore consequatur itaque obcaecati? Natus nihil sit, alias cumque omnis temporibus ut nulla!</h4>
+                            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolor nam, at nulla, fugit enim odit maiores quam iure tenetur possimus saepe! Optio expedita et, recusandae dolor dolore eius? Explicabo eius architecto ipsam! Adipisci, cumque voluptatibus, a illo dolores ipsum architecto ex nam corrupti quia saepe distinctio voluptatum repellendus beatae?</p>
+                            <div class="review">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="rating">4.5</p>
+                                <span class="num_of_review">(20 reviews)</span>
+                            </div>
+                            <div class="pricing">
+                                <p class="act_price">&#8377;450</p>
+                                <p class="deal_price">&#8377;120/-</p>
+                                <p class="offer_price">80% off</p>
+                            </div>
+                            <div class="time">
+                                <div class="end_text">Hurry Up! Offer ends in : </div>
+                                <div class="main_time">
+                                    <span class="indicator">Days</span>
+                                    <span class="value">01</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Hrs</span>
+                                    <span class="value">15</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Mins</span>
+                                    <span class="value">28</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Secs</span>
+                                    <span class="value">50</span>
+                                </div>
+                            </div>
+    
+                            <div class="order">
+                                <a href="#" class="order_now">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/jewellery-1.jpg" alt="">
+                        </div>
+                        <div class="details">
+                            <h4 class="name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sunt doloribus ullam, debitis tenetur reiciendis in, alias numquam, sed unde corporis quaerat inventore consequatur itaque obcaecati? Natus nihil sit, alias cumque omnis temporibus ut nulla!</h4>
+                            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolor nam, at nulla, fugit enim odit maiores quam iure tenetur possimus saepe! Optio expedita et, recusandae dolor dolore eius? Explicabo eius architecto ipsam! Adipisci, cumque voluptatibus, a illo dolores ipsum architecto ex nam corrupti quia saepe distinctio voluptatum repellendus beatae?</p>
+                            <div class="review">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-stroke"></i>
+                                </div>
+                                <p class="rating">4.5</p>
+                                <span class="num_of_review">(20 reviews)</span>
+                            </div>
+                            <div class="pricing">
+                                <p class="act_price">&#8377;2500</p>
+                                <p class="deal_price">&#8377;1000/-</p>
+                                <p class="offer_price">80% off</p>
+                            </div>
+                            <div class="time">
+                                <div class="end_text">Hurry Up! Offer ends in : </div>
+                                <div class="main_time">
+                                    <span class="indicator">Days</span>
+                                    <span class="value">01</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Hrs</span>
+                                    <span class="value">15</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Mins</span>
+                                    <span class="value">28</span>
+                                </div>
+                                <div class="main_time">
+                                    <span class="indicator">Secs</span>
+                                    <span class="value">50</span>
+                                </div>
+                            </div>
+    
+                            <div class="order">
+                                <a href="#" class="order_now">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- newest product -->
+    <div class="latest">
+        <div class="container">
+            <div class="latest_section">
+                <h3 class="heading">Latest Products</h3>
+                <div class="card_container">
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/shirt-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/shirt-2.jpg" class="img-hover" alt="">
+                            <p class="sale">Sale</p>
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Shirt</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/watch-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/watch-2.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Watch</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/shorts-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/shorts-2.jpg" class="img-hover" alt="">
+                            <p class="sale new">New</p>
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Shorts</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/clothes-3.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/clothes-4.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Skirt</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/shoe-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/shoe-1_1.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Shoe</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/watch-3.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/watch-4.jpg" class="img-hover" alt="">
+                            <p class="sale new">New</p>
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Watch</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/shoe-2.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/shoe-2_1.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Shoe</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/party-wear-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/party-wear-2.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Party Wear</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/sports-2.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/sports-4.jpg" class="img-hover" alt="">
+                            <p class="offer">18%</p>
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Shoe</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="image">
+                            <img src="assets/images/products/jacket-1.jpg" class="img-default" alt="">
+                            <img src="assets/images/products/jacket-2.jpg" class="img-hover" alt="">
+                            <div class="actions">
+                                <i class="fa fa-eye"></i>
+                                <i class="fa fa-cart-plus"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <a href="#" class="cat_name">Jacket</a>
+                           <h4 class="prod_name">
+                            <a href="#" class="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, vitae.</a>
+                           </h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="pricing">
+                                <div class="sell_price">&#8377;150/-</div>
+                                <div class="act_price">&#8377;250</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
