@@ -1603,6 +1603,14 @@ i {
        max-height: 160px;
        visibility: visible;
     }
+
+    .mobile-sidebar-pane #sidebar2 .mobile_main_menu .mobile_menu_lists .mobile_category_menu.active{
+        max-height: 200px;
+    }
+
+    .mobile-sidebar-pane #sidebar2 .mobile_main_menu .mobile_menu_lists:last-child .mobile_category_menu.active{
+        max-height: 250px;
+    }
     
     .mobile-sidebar-pane .mobile_main_menu .mobile_menu_lists .mobile_category_menu .mobile_category_menu_lists a{
        padding: 10px 0;

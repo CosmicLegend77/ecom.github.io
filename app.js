@@ -19,9 +19,14 @@ const swiper = new Swiper('.swiper', {
   
 });
 
+// sidebar
 var sidebarBtn = document.querySelector("#sidebar_btn")
 var sidebarClose = document.querySelector("#sidebar_close")
 var sidebar = document.querySelector("#sidebar")
+// 2nd sidebar
+var sidebar2Btn = document.querySelector("#sidebar2_btn")
+var sidebar2Close = document.querySelector("#sidebar2_close")
+var sidebar2 = document.querySelector("#sidebar2")
 var overlay = document.querySelector("#overlay")
 
 sidebarBtn.addEventListener("click",function(){
@@ -31,6 +36,16 @@ sidebarBtn.addEventListener("click",function(){
 
 sidebarClose.addEventListener("click",function(){
   sidebar.classList.remove("active");
+  overlay.classList.remove("active")
+})
+
+sidebar2Btn.addEventListener("click",function(){
+  sidebar2.classList.add("active");
+  overlay.classList.add("active")
+})
+
+sidebar2Close.addEventListener("click",function(){
+  sidebar2.classList.remove("active");
   overlay.classList.remove("active")
 })
 
