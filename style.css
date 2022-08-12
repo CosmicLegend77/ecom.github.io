@@ -1279,9 +1279,8 @@ i {
     width: 80px;
     height: 80px;
     margin: 10px 0;
-    object-fit: cover;
-    padding: 0;
     overflow: hidden;
+    object-fit: cover;
     filter: brightness(90%);
     
 }
@@ -1306,8 +1305,6 @@ i {
 .product_showcase .container .product_showcase_section .left .main_product{
     margin-left: 15px;
 }
-
-
 
 .product_showcase .container .product_showcase_section .left .main_product .image{
     width: 100%;
@@ -1531,8 +1528,147 @@ i {
     box-shadow: 2px 2px 5px #00ce00;
 }
 
+.customer_review{
+    padding: 15px 20px;
+}
 
+.customer_review .container .customer_review_section .submit_review{
+    margin: 15px 0;
+}
 
+.customer_review .container .customer_review_section .submit_review button{
+    background-color: var(--white);
+    border: 1px solid var(--orangish-yellow);
+    outline: none;
+    padding: 10px;
+    font-size: 0.975rem;
+    font-weight: 600;
+    color: var(--orangish-yellow);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.customer_review .container .customer_review_section .submit_review button:hover{
+    color: var(--white);
+    background-color: var(--orangish-yellow);
+}
+
+.customer_review .container .customer_review_section .submit_review button i{
+    color: var(--orangish-yellow);
+    transition: 0.4s ease;
+}
+
+.customer_review .container .customer_review_section .submit_review button:hover i{
+    color: var(--white);
+}
+
+.customer_review .container .customer_review_section .review_heading{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.customer_review .container .customer_review_section .review_heading p{
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.customer_review .container .customer_review_section .reviews_card{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card{
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px var(--shadow);
+    width: 45%;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_avatar{
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_avatar img{
+    width: 100%;
+    height: auto;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_name p{
+    font-size: 1.1rem;
+    color: var(--asbestos-black);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_rating_star .stars {
+   margin: 10px 0;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_rating_star .stars i{
+    color: var(--orangish-yellow);
+    font-size: 18px;
+}
+
+.customer_review .container .customer_review_section .reviews_card .user_card .user_review_text p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--light-grey);
+    font-size: 0.875rem;
+}
+
+.customer_review .container .customer_review_section .read_more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.customer_review .container .customer_review_section .read_more button{
+    padding: 8px 10px;
+    font-size: 0.875rem;
+    color: var(--light-grey);
+    border-radius: 25px;
+    font-weight: 600;
+    border: 1px solid var(--border);
+    outline: none;
+    background-color: var(--white);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.customer_review .container .customer_review_section .read_more .border{
+    height: 1px;
+    width: 100%;
+    background: var(--boder-light);
+    position: absolute;
+    z-index: -1;
+}
+
+.customer_review .container .customer_review_section .no_review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.customer_review .container .customer_review_section .no_review p{
+    font-size: 0.925rem;
+    color: var(--light-grey);
+}
 
 /* mobile */
 .mobile-menu-pane {
@@ -1758,6 +1894,15 @@ i {
     }
 
     /* product */
+
+    .product_showcase{
+        padding: 0 20px;
+    }
+
+    .product_showcase .container .product_showcase_section{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .product_showcase .container .product_showcase_section .left .main_product .zoom{
        display: none;
@@ -1999,6 +2144,54 @@ i {
     }
 
     .special_offer .container .special_offer_section .special_discount {
+        width: 100%;
+    }
+
+    /* product */
+
+    .product_showcase .container .product_showcase_section{
+        gap: 5px;
+    }
+    .product_showcase .container .product_showcase_section .left{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    .product_showcase .container .product_showcase_section .left .gallery{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product_showcase .container .product_showcase_section .left .gallery{
+        display: flex;
+        width: 100%;
+    }
+
+    .product_showcase .container .product_showcase_section .left .gallery .images{
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    .product_showcase .container .product_showcase_section .left .gallery .images:first-child{
+        margin-top: 10px;
+    }
+    
+    .product_showcase .container .product_showcase_section .left .main_product{
+        margin: 0;
+    }
+
+    .product_showcase .container .product_showcase_section .right .product_details .prod_review{
+        flex-wrap: wrap;
+    } 
+
+    .product_showcase .container .product_showcase_section .right .product_details .sizing select{
+        width: 60%;
+    }
+
+    .customer_review .container .customer_review_section .reviews_card .user_card{
         width: 100%;
     }
 
