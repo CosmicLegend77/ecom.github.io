@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ecommerce</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="assets/images/logo/logo.svg" alt=""></a>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Search for products...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="user-action">
+                <a href="#"><i class="fa-regular fa-user"></i></a>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <span>0</span>
+                </div>
+                <div class="order">
+                    <a href="#"><i class="fa-solid fa-truck-fast"></i></a>
+                    <span>0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu's -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="menubar">
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Categories</a>
+                    <div class="dropdown-container">
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Men's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Casual</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Formal</a></li>
+                                <li><a href="#" class="dropdown-menu-title">T-shirt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shorts</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Jeans</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img
+                                            src="assets/images/electronics-banner-1.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Women's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Casual</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Formal</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Kurties</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Sarees</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Lehanga</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img src="assets/images/mens-banner.jpg"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Kid's</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Jeans</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shorts</a></li>
+                                <li><a href="#" class="dropdown-menu-title">T-shirt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Hats</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Shoes</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img src="assets/images/womens-banner.jpg"
+                                            alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-lists">
+                            <h4 class="dropdown-heading">Accessories</h4>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-menu-title">Earings</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Mackup-kit</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Lipstick</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Belt</a></li>
+                                <li><a href="#" class="dropdown-menu-title">Watches</a></li>
+                                <li><a href="#" class="dropdown-menu-title"><img
+                                            src="assets/images/electronics-banner-2.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Men's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">T-shirts</a></li>
+                        <li class="dropdown-item"><a href="#">Shorts</a></li>
+                        <li class="dropdown-item"><a href="#">Shoes</a></li>
+                        <li class="dropdown-item"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Woman's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">Kurties</a></li>
+                        <li class="dropdown-item"><a href="#">Sarees</a></li>
+                        <li class="dropdown-item"><a href="#">Lehanga</a></li>
+                        <li class="dropdown-item"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Kid's</a>
+                    <ul class="dropdown-single-list">
+                        <li class="dropdown-item"><a href="#">T-shirts</a></li>
+                        <li class="dropdown-item"><a href="#">Shorts</a></li>
+                        <li class="dropdown-item"><a href="#">Shoes</a></li>
+                        <li class="dropdown-item"><a href="#">Hats</a></li>
+                    </ul>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Blog</a>
+                </li>
+                <li class="menu-category-list">
+                    <a href="#" class="menu-title">Hot Offers</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu-pane">
+        <ul class="menu-container">
+            <li class="menu_lists_item"><a id="sidebar_btn"><i class="fas fa-bars"></i></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-bag-shopping"></i><span>0</span></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-truck-fast"></i></a></li>
+            <li class="menu_lists_item"><a href="#"><i class="fas fa-user"></i></a></li>
+            <li class="menu_lists_item"><a id="sidebar2_btn"><i class="fas fa-list"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="mobile-sidebar-pane">
+        <div class="container" id="sidebar">
+            <div class="heading">
+                <h3>Menu</h3>
+                <div id="sidebar_close">
+                    <i class="fa fa-xmark"></i>
+                </div>
+            </div>
+            <ul class="mobile_main_menu">
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Home</a>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Men's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">T-shirts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shorts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shoes</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Women's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Kurties</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Sarees</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Lehangs</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Kid's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">T-shirts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shorts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shoes</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Hats</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Blog</a>
+                </li>
+                <li class="mobile_menu_lists">
+                    <a href="#" class="mobile_menu_links">Hot Offers</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mobile-sidebar-pane">
+        <div class="container" id="sidebar2">
+            <div class="heading">
+                <h3>Categories</h3>
+                <div id="sidebar2_close">
+                    <i class="fa fa-xmark"></i>
+                </div>
+            </div>
+            <ul class="mobile_main_menu">
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Men's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Formal</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">T-shirts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shorts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Jeans</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Women's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Formal</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Casual</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Kurties</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Sarees</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Lehangs</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Kid's</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Jeans</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shorts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">T-shirts</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Hats</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Shoes</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Accessories</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Earings</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Makeup Kit</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Lipstick</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Belt</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Watches</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_menu_lists">
+                    <button class="accordian_menu" id="accordian_menu">
+                        <p class="menu_name">Top Picks</p>
+                        <div><i class="fa fa-plus"></i></div>
+                    </button>
+                    <ul class="mobile_category_menu" id="mobile_category_menu">
+                        <li class="mobile_category_menu_lists"><a href="#">Under &#8377;100</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">&#8377;100 - &#8377;500</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">&#8377;500 - &#8377;1000</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">&#8377;1000 - &#8377;5000</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">&#8377;5000 - &#8377;10000</a></li>
+                        <li class="mobile_category_menu_lists"><a href="#">Above &#8377;10000</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- cart section  -->
+    <div class="my_cart">
+        <div class="container">
+            <div class="my_cart_section">
+                <h3 class="heading">My Cart</h3>
+                <div class="main_cart">
+                    <table class="table">
+                        <thead>
+                            <th>S.No</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><img src="assets/images/products/1.jpg" alt=""></td>
+                                <td><p>Sample product</p></td>
+                                <td>
+                                    <div class="qty">
+                                        <button class="qtyDown">-</button>
+                                        <input type="text" readonly value="1">
+                                        <button class="qtyUp">+</button>
+                                    </div>
+                                </td>
+                                <td>&#8377;250</td>
+                                <td>&#8377;250</td>
+                                <td><i class="fas fa-xmark"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img src="assets/images/products/2.jpg" alt=""></td>
+                                <td><p>Sample product</p></td>
+                                <td>
+                                    <div class="qty">
+                                        <button class="qtyDown">-</button>
+                                        <input type="text" readonly value="1">
+                                        <button class="qtyUp">+</button>
+                                    </div>
+                                </td>
+                                <td>&#8377;250</td>
+                                <td>&#8377;250</td>
+                                <td><i class="fas fa-xmark"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart_actions">
+                    <div class="left">
+                        <button><i class="fa fa-shopping-basket"></i>Continue Shopping</button>
+                    </div>
+                    <div class="right">
+                        <p>Grand Total : &#8377;500 (2 items)</p>
+                        <button><i class="fa fa-wallet"></i>Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
